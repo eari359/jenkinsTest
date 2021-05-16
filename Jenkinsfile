@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        junit 'report.xml'
         sh 'make test'
+        junit 'report.xml'
       }
     }
 
