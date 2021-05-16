@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        ctest 'InSearchPath'
+        ctest(installation: 'InSearchPath', arguments: '--target test')
       }
     }
 
