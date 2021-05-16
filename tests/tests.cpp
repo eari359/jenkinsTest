@@ -8,7 +8,7 @@ TEST_CASE( "add is working", "[my_add]" ) {
 	REQUIRE(add(0, 0) == 0);	
 	REQUIRE(add(1, 0) == 1);	
 	REQUIRE(add(0, 1) == 1);	
-	REQUIRE(add(1, 1) == 1);	
+	REQUIRE(add(1, 1) == 2);	
 }
 
 TEST_CASE( "failed test", "[my_add]" ) {
