@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh '''mkdir build
 cd build
+echo CMAKE
 cmake .. -A x64'''
         junit 'result.xml'
       }
