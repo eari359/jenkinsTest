@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        ctest '.'
+        ctest 'C:\\Program Files\\CMake\\bin\\ctest.exe'
       }
     }
 
     stage('build') {
       steps {
-        cmake '.'
+        cmake 'C:\\Program Files\\CMake\\bin\\cmake.exe'
       }
     }
 
