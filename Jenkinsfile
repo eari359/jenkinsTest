@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        ctest 'C:\\Program Files\\CMake\\bin\\ctest.exe'
+        ctest 'InSearchPath'
       }
     }
 
     stage('build') {
       steps {
-        cmake 'C:\\Program Files\\CMake\\bin\\cmake.exe'
+        cmake 'InSearchPath'
       }
     }
 
