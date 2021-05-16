@@ -3,10 +3,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''mkdir build
-cd build
-cmake ..
-ctest'''
+        cmakeBuild(installation: 'InSearchPath', buildDir: 'build', buildType: 'Release', cleanBuild: true)
         junit 'result.xml'
       }
     }
