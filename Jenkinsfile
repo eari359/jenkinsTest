@@ -6,6 +6,7 @@ pipeline {
         sh '''mkdir build
 cd build
 cmake -A x64 ..'''
+        junit 'result.xml'
       }
     }
 
