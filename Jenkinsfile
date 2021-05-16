@@ -7,6 +7,7 @@ pipeline {
 cd build
 cmake ..
 make test'''
+        junit 'result.xml'
       }
     }
 
