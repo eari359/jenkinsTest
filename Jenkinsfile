@@ -1,16 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('test') {
+    stage('Test') {
       steps {
-        sh 'make test'
-        junit 'report.xml'
-      }
-    }
-
-    stage('build') {
-      steps {
-        cmake 'InSearchPath'
+        sh '''mkdir build
+cd build
+cmake ..
+make test'''
       }
     }
 
